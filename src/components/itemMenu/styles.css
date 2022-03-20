@@ -1,0 +1,13 @@
+.itemMenu {
+  display: grid;
+  padding-bottom: 0.2rem;
+  padding-top: 0.2rem;
+  place-items: center;
+  transition: all 0.2s ease-in-out;
+  width: 100%;
+}
+
+.itemMenu:hover {
+  background-color: var(--color-secondary);
+  color: var(--color-primary);
+}

@@ -79,10 +79,12 @@ h6 {
 */
 /* Aquí definimos las Custom properties */
 :root {
-  --negro: #393939;
+  --color-primary: #316879;
+  --color-secondary: #f5f5f5;
+  --color-tertiary: #ced7d8;
   /* Tipografía */
-  --tipo-principal: Helvetica, Arial, sans-serif;
-  --tipo-secundaria: Verdana;
+  --font-primary: 'Roboto', sans-serif;
+  --font-secundaria: Verdana;
 }
 
 /* Las adaptamos al modo oscuro */
@@ -340,18 +342,22 @@ svg {
 body {
   min-height: 100vh;
   font-size: 100%;
-  font-family: var(--tipo-principal);
-  color: var(--negro);
+  font-family: var(--font-primary);
+  color: var(--color-primary);
+  background-color: var(--color-tertiary);
   /* opcional */
   line-height: 1.4em;
   /* opcional */
-  -webkit-hyphens: auto;
+  /* -webkit-hyphens: auto;
   -ms-hyphens: auto;
-  hyphens: auto;
+  hyphens: auto; */
   /* opcional */
-  font-smooth: always;
+  /* font-smooth: always; */
   /* opcional */
   -webkit-font-smoothing: antialiased;
   /* opcional */
   -moz-osx-font-smoothing: grayscale;
 }
+
+@custom-media --sm (min-width: 640px);
+@custom-media --md (min-width: 768px);

@@ -1,0 +1,26 @@
+.navigation {
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
+  display: grid;
+  font-family: var(--font-primary);
+  font-size: 1.5rem;
+  font-weight: 700;
+  height: 24vh;
+  letter-spacing: 0.1rem;
+  place-items: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.navigationMenu {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  margin: 8px auto;
+  width: 100%;
+}
+
+@media (--md) {
+  .navigation {
+    height: 16vh;
+  }
+}
