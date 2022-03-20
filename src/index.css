@@ -77,15 +77,6 @@ h6 {
     👉 Problemas con tipografías y etiquetas input en formularios
     👉 Unificar la tipografía de todas las etiquetas de una web
 */
-/* Aquí definimos las Custom properties */
-:root {
-  --color-primary: #316879;
-  --color-secondary: #f5f5f5;
-  --color-tertiary: #ced7d8;
-  /* Tipografía */
-  --font-primary: 'Roboto', sans-serif;
-  --font-secundaria: Verdana;
-}
 
 /* Las adaptamos al modo oscuro */
 @media (prefers-color-scheme: dark) {
@@ -289,16 +280,6 @@ q:after {
   content: none;
 }
 
-/* Configuramos el texto que seleccionamos */
-::-moz-selection {
-  background-color: var(--negro);
-  color: var(--blanco);
-}
-::selection {
-  background-color: var(--negro);
-  color: var(--blanco);
-}
-
 /* Nivelamos problemas de tipografías y colocación de formularios */
 form,
 input,
@@ -333,6 +314,37 @@ svg {
   display: block;
   fill: currentColor;
 }
+
+/* Aquí definimos las Custom properties */
+:root {
+  --color-primary: #3f51b5;
+  --color-secondary: #f5f5f5;
+  --color-tertiary: #ced7d8;
+  /* Tipografía */
+  --font-primary: 'Roboto', sans-serif;
+  --font-secundaria: Verdana;
+
+  --font-size-h1: 2rem;
+  --font-size-h2: 1.5rem;
+  --font-size-h3: 1.2rem;
+
+  --font-weight-h1: bold;
+
+  --font-size-padding: 1.5ch;
+
+  --font-size-h1-md: calc(var(--font-size-h1) * 1.5);
+}
+
+/* Configuramos el texto que seleccionamos */
+::-moz-selection {
+  background-color: var(--negro);
+  color: var(--blanco);
+}
+::selection {
+  background-color: var(--negro);
+  color: var(--blanco);
+}
+
 /* (Probándolo, no usar en producción) En el caso de añadir una  */
 /* p svg{
   display: inline;

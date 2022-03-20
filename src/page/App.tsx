@@ -1,4 +1,5 @@
 import { Navigation } from '../components/navigation';
+import { TitlePrincipal } from '../components/titlePrincipal';
 import './App.css';
 
 export const App = () => {
@@ -6,7 +7,7 @@ export const App = () => {
     <div className="App">
       <Navigation />
       <section>
-        <h1> Cesar Galindo S. </h1>
+        <TitlePrincipal />
         <h2> Front-End Developer </h2>
         <img src='logo' alt='github' />
         <img src='logo' alt='LinkedIn' />
