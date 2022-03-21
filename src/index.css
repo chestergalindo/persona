@@ -325,24 +325,35 @@ svg {
   --font-secundaria: Verdana;
 
   --font-size-h1: 2rem;
-  --font-size-h2: 1.5rem;
-  --font-size-h3: 1.2rem;
-
-  --font-weight-h1: bold;
-
-  --font-size-padding: 1.5ch;
-
   --font-size-h1-md: calc(var(--font-size-h1) * 1.5);
+
+  --font-size-h2: calc(var(--font-size-h1) * 0.8);
+  --font-size-h2-md: calc(var(--font-size-h2) * 1.25);
+
+  --font-size-h3: calc(var(--font-size-h1) * 0.7);
+  --font-size-h3-md: calc(var(--font-size-h3) * 1.25);
+
+  --font-weight-h1: 700;
+  --font-weight-h2: 600;
+  --font-weight-h3: 500;
+
+  --font-size-padding: 1ch;
+  --font-size-padding-md: calc(var(--font-size-padding) * 1.5);
+
+  --font-size-text: 4%;
+  --font-size-text-md: calc(var(--font-size-text) * 1.5);
+  --font-size-text-lg: calc(var(--font-size-text) * 2);
+  --font-size-text-xl: calc(var(--font-size-text) * 3);
 }
 
 /* Configuramos el texto que seleccionamos */
 ::-moz-selection {
-  background-color: var(--negro);
-  color: var(--blanco);
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
 }
 ::selection {
-  background-color: var(--negro);
-  color: var(--blanco);
+  background-color: var(--color-secondary);
+  color: var(--color-primary);
 }
 
 /* (Probándolo, no usar en producción) En el caso de añadir una  */
@@ -373,3 +384,4 @@ body {
 
 @custom-media --sm (min-width: 640px);
 @custom-media --md (min-width: 768px);
+@custom-media --lg (min-width: 1024px);

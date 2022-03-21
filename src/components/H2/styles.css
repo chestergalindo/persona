@@ -1,0 +1,12 @@
+h2 {
+  font-size: var(--font-size-h2);
+  font-weight: var(--font-weight-h2);
+  padding: var(--font-size-padding) 0 var(--font-size-padding) 0;
+  text-align: center;
+}
+
+@media (--md) {
+  h2 {
+    font-size: var(--font-size-h2-md);
+  }
+}

@@ -21,17 +21,17 @@ const items = [
   {
     name: 'Side Project',
     path: '/side-project',
-  }
-]
+  },
+];
 
 export const Navigation = () => {
-  return(
+  return (
     <nav className="navigation">
-      <ul className='navigationMenu'>
-        {items.map(item =>
+      <ul className="navigationMenu">
+        {items.map((item) => (
           <ItemMenu key={item.name} name={item.name} path={item.path} />
-        )}
+        ))}
       </ul>
     </nav>
-  )
+  );
 };

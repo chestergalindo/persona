@@ -1,0 +1,15 @@
+.section-principle {
+  padding-inline: var(--font-size-text-md);
+}
+
+@media (--md) {
+  .section-principle {
+    padding-inline: var(--font-size-text-lg);
+  }
+}
+
+@media (--lg) {
+  .section-principle {
+    padding-inline: var(--font-size-text-xl);
+  }
+}

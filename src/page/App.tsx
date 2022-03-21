@@ -1,81 +1,101 @@
+import { MediaLink } from '../components/mediaLink';
 import { Navigation } from '../components/navigation';
-import { TitlePrincipal } from '../components/titlePrincipal';
+import { H1 } from '../components/H1';
+import { H2 } from '../components/H2';
+import { H3 } from '../components/H3';
+import { P } from '../components/P';
+import { Strong } from '../components/Strong';
+import { Section } from '../components/Section';
 import './App.css';
 
 export const App = () => {
-  return(
+  return (
     <div className="App">
       <Navigation />
-      <section>
-        <TitlePrincipal />
-        <h2> Front-End Developer </h2>
-        <img src='logo' alt='github' />
-        <img src='logo' alt='LinkedIn' />
-        <img src='logo' alt='Mail' />
-        <img src='logo' alt='movil phone' />
-      </section>
-        <h3>SUMMARY</h3>
-        <p>
-          With experience in performance web, besides interest by accessibility in web Skills and ex- perience in the management of process with 150 people per year. Interested in test and good development practices.
-        </p>
-        <h3>SKILLS</h3>
-        <strong>Front-End: </strong> <p>Css, Graphql, Html, Javascript, React, Sass, Typescript, Webpack.</p>
-        <strong>Misc: </strong> <p>Excel, Git, scrum, Github, Trello, Word.</p>
-        <strong>Languages: </strong> <p>CSpanish: Native, English: B2.</p>
-        <h3>EXPERIENCE</h3>
+      <Section>
+        <H1 />
+        <H2 />
+        <MediaLink />
+      </Section>
+      <Section>
+        <H3> Summary </H3>
+        <P>
+          With experience in performance web, besides interest by accessibility in web Skills and
+          experience in the management of process with 150 people per year. Interested in test and
+          good development practices.
+        </P>
+      </Section>
+      <Section>
+        <H3> Skills </H3>
+        <Strong>Front-End: </Strong>
+        <P>Css, Graphql, Html, Javascript, React, Sass, Typescript, Webpack.</P>
+        <Strong>Misc: </Strong> <P>Excel, Git, scrum, Github, Trello, Word.</P>
+        <Strong>Languages: </Strong> <P>Spanish: Native, English: B2.</P>
+      </Section>
+      <Section>
+        <H3> Experiences </H3>
         <h4>Front-End Developer</h4>
-        <p>
-          <strong>Date: </strong> <span>2021 - Present</span>
-        </p>
-        <p>
-          <strong>Company: </strong> <span>Cesar Galindo S. </span>
-        </p>
-        <p>
-          <strong>Position: </strong> <span>Front-End Developer</span>
-        </p>
-        <p>
-          <strong>Description: </strong> <span>
-            Performance optimization in loading and interaction times, with an improve- ment of 5% (Css, Git, Graphql, Html, Js, React, Typescript).
+        <P>
+          <Strong>Date: </Strong> <span>2021 - Present</span>
+        </P>
+        <P>
+          <Strong>Company: </Strong> <span>Cesar Galindo S. </span>
+        </P>
+        <P>
+          <Strong>Position: </Strong> <span>Front-End Developer</span>
+        </P>
+        <P>
+          <Strong>Description: </Strong>{' '}
+          <span>
+            Performance optimization in loading and interaction times, with an improve- ment of 5%
+            (Css, Git, Graphql, Html, Js, React, Typescript).
           </span>
-        </p>
+        </P>
         <h4>Front-End Developer</h4>
-        <p>
-          <strong>Date: </strong> <span>2020 - 2021</span>
-        </p>
-        <p>
-          <strong>Company: </strong> <span>Cesar Galindo S. </span>
-        </p>
-        <p>
-          <strong>Position: </strong> <span>Front-End Developer</span>
-        </p>
-        <p>
-          <strong>Description: </strong> <span>
-            Performance optimization in loading and interaction times, with an improve- ment of 5% (Css, Git, Graphql, Html, Js, React, Typescript).
+        <P>
+          <Strong>Date: </Strong> <span>2020 - 2021</span>
+        </P>
+        <P>
+          <Strong>Company: </Strong> <span>Cesar Galindo S. </span>
+        </P>
+        <P>
+          <Strong>Position: </Strong> <span>Front-End Developer</span>
+        </P>
+        <P>
+          <Strong>Description: </Strong>{' '}
+          <span>
+            Performance optimization in loading and interaction times, with an improve- ment of 5%
+            (Css, Git, Graphql, Html, Js, React, Typescript).
           </span>
-        </p>
-        <h3>EDUCATION</h3>
+        </P>
+      </Section>
+      <Section>
+        <H3> Education </H3>
         <h4>Front-End Developer</h4>
-        <p>
-          <strong>Date: </strong> <span>2020 - 2021</span>
-        </p>
-        <p>
-          <strong>Company: </strong> <span>Cesar Galindo S. </span>
-        </p>
-           <h4>Front-End Developer</h4>
-        <p>
-          <strong>Date: </strong> <span>2020 - 2021</span>
-        </p>
-        <p>
-          <strong>Company: </strong> <span>Cesar Galindo S. </span>
-        </p>
-        <h3>Side Projects</h3>
+        <P>
+          <Strong>Date: </Strong> <span>2020 - 2021</span>
+        </P>
+        <P>
+          <Strong>Company: </Strong> <span>Cesar Galindo S. </span>
+        </P>
         <h4>Front-End Developer</h4>
-        <p>
-          <strong>Date: </strong> <span>2020 - 2021</span>
-        </p>
-        <p>
-          <strong>Company: </strong> <span>Cesar Galindo S. </span>
-        </p>
+        <P>
+          <Strong>Date: </Strong> <span>2020 - 2021</span>
+        </P>
+        <P>
+          <Strong>Company: </Strong> <span>Cesar Galindo S. </span>
+        </P>
+      </Section>
+      <Section>
+     <H3> Side Project </H3>
+      <h4>Front-End Developer</h4>
+      <P>
+        <Strong>Date: </Strong> <span>2020 - 2021</span>
+      </P>
+      <P>
+        <Strong>Company: </Strong> <span>Cesar Galindo S. </span>
+      </P>
+      </Section>
     </div>
-  )
+  );
 };

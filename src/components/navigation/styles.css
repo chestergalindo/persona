@@ -5,7 +5,7 @@
   font-family: var(--font-primary);
   font-size: 1.5rem;
   font-weight: 700;
-  height: 24vh;
+  height: 32vh;
   letter-spacing: 0.1rem;
   place-items: center;
   text-decoration: none;
@@ -21,6 +21,6 @@
 
 @media (--md) {
   .navigation {
-    height: 16vh;
+    height: 20vh;
   }
 }
