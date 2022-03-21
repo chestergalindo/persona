@@ -317,9 +317,9 @@ svg {
 
 /* Aquí definimos las Custom properties */
 :root {
-  --color-primary: #3f51b5;
+  --color-primary: #95e3ff;
   --color-secondary: #f5f5f5;
-  --color-tertiary: #ced7d8;
+  --color-tertiary: #20282c;
   /* Tipografía */
   --font-primary: 'Roboto', sans-serif;
   --font-secundaria: Verdana;
