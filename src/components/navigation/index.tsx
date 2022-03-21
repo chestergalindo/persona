@@ -19,7 +19,7 @@ const items = [
     path: '/education',
   },
   {
-    name: 'Side Project',
+    name: 'Side Projects',
     path: '/side-project',
   },
 ];

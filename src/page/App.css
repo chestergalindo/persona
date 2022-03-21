@@ -1,0 +1,21 @@
+.App {
+  display: grid;
+  grid-template-areas:
+    'menulocation'
+    'main';
+}
+
+.menu {
+  grid-area: menulocation;
+}
+
+.main {
+  grid-area: main;
+}
+
+@media (--lg) {
+  .App {
+    grid-template-columns: 25% 1fr;
+    grid-template-areas: 'menulocation main';
+  }
+}
